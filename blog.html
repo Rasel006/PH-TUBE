@@ -1,0 +1,158 @@
+<!--Md. Rasel
+Email: rizurasel.cse@gmail.com
+Date: 28/11/2023 -->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHTUBE-BLOG</title>
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <img src="images/logo.png" class="h-8" alt="ph tube" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.4/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body>
+    <div class="max-w-[800px] select-none marker:text-[#4BA2D3] text-white mx-auto pt-32">
+        <div class="collapse collapse-plus bg-[#161629] mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                *Discuss the scope of var, let, and const*
+            </div>
+            <div class="collapse-content">
+                <p class="text-base font-bold text-[#c51b46]">*VAR</p>
+                <ul>
+                    <li>
+                        Scope var has function-level scope. It means that a variable declared with var is visible throughout
+                        the function in which
+                        it is declared.
+                    </li>
+                    <li>
+                        Hoisting Variables declared with var are hoisted to the top of their function or global scope. However,
+                        only the declaration is hoisted, not the initialization.
+                    </li>
+                    <li>
+                        Reassignment var allows for redeclaration and
+                        reassignment of
+                        variables.
+                    </li>
+                </ul>
+                <p class="text-base font-bold text-[#c51b46]">*LET</p>
+                <ul>
+                    <li>
+                        <span>Block Scope </span>
+                        let has block-level scope. It means that a variable declared with let is only accessible within
+                        the block it is
+                        declared in (if, for, while, etc.).
+                    </li>
+                    <li>
+                        Hoisting Variables declared with let are hoisted to the top of their block but are not initialized.
+                        Accessing the
+                        variable before its declaration results in a ReferenceError.
+
+                    </li>
+                    <li>
+                        Reassignment let allows reassignment but not redeclaration of the same variable within the same block scope.
+                    </li>
+                </ul>
+                <p class="text-base font-bold text-[#c51b46]">*CONST</p>
+                <ul>
+                    <li>
+                        Block Scope const also has block-level scope.
+                    </li>
+                    <li>
+                        Hoisting like let, variables declared with const are hoisted to the top of their block but are not initialized. Accessing
+                        the variable before its declaration results in a ReferenceError.
+                    </li>
+                    <li>
+                        Reassignment Variables declared with const must be initialized during declaration and cannot be reassigned. However, for
+                        objects and arrays, while the reference cannot be changed, the internal properties or elements of the
+                        object/array can be modified.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-[#161629] mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                *Tell us the use cases of null and undefined*
+            </div>
+            <div class="collapse-content">
+                <p class="text-base font-bold text-[#c51b46]">*Null</p>
+                <ul>
+                    <li>
+                        Intentional absence of value it is a deliberate assignment to a variable or an object property to signify that it has no value or is
+                        explicitly empty.
+        
+        
+                    </li>
+                    <li>
+                        Use cases:
+                        <ul>
+                            <li>
+                                Explicitly clearing values sometimes used to explicitly reset or clear a variable or an object property.
+                            </li>
+                            <li>
+                                As a placeholder Can be used as a placeholder until a value is assigned.
+                            </li>
+                            <li>
+                                Checking for uninitialized values it can be used to check if a value has been intentionally left blank or not assigned.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="text-base font-bold text-[#c51b46]">*Undefined</p>
+                <ul>
+                    <li>
+                        Intentional absence of value it typically indicates an uninitialized variable or a property that has not been assigned a value
+                        explicitly.
+        
+                    </li>
+                    <li>
+                        Use cases:
+                        <ul>
+                            <li>
+                                Variable declaration without initialization when a variable is declared but not assigned any value, it automatically gets the value
+                                undefined.
+                            </li>
+                            <li>
+                                Missing function arguments if a function is called with fewer arguments than declared parameters, the remaining parameters
+                                will have an undefined value.
+                            </li>
+                            <li>
+                                Property of an object that has not been set
+                                When trying to access an object property that doesn't exist, it returns undefined.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-[#161629] mb-4">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                *What do you mean by REST API*
+            </div>
+            <div class="collapse-content">
+                <p class="text-base font-bold text-[#c51b46] mb-4">*REST API </p>
+                <p>
+                    An API, or application programming interface, is a set of
+                    rules that define how applications or devices can connect to and communicate with each other. A REST API is
+                    an API that conforms to the design principles of the REST, or representational state transfer architectural
+                    style. For this reason, REST APIs are sometimes referred to RESTful APIs. </p>
+            </div>
+        </div>
+        <div class="flex mt-4 justify-center">
+            <a class='bg-[#161629] px-3 rounded-md py-2 text-center' href='/'>
+                Back to home
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
